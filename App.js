@@ -1,11 +1,10 @@
 import React from 'react';
 import type {Node} from 'react';
 import {StyleSheet} from 'react-native';
-
-import CategorisesScreen from './src/screens/CategoriesScreen';
+import AppNavigation from './src/navigation/AppNavigation';
 
 const App: () => Node = () => {
-  return <CategorisesScreen />;
+  return <AppNavigation />;
 };
 
 const styles = StyleSheet.create({});
