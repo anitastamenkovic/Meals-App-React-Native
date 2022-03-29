@@ -1,8 +1,10 @@
 import * as React from 'react';
+import {Button} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import CategoriesScreen from '../../screens/CategoriesScreen';
 import MealsOverviewScreen from '../../screens/MealsOverviewScreen';
+import MealDetailScreen from '../../screens/MealDetailScreen';
 
 const MealsStack = createNativeStackNavigator();
 
@@ -32,6 +34,7 @@ const ContactsNavigator = () => {
         //   };
         // }}
       />
+      <MealsStack.Screen name="MealDetail" component={MealDetailScreen} />
     </MealsStack.Navigator>
   );
 };
