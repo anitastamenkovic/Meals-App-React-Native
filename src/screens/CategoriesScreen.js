@@ -20,7 +20,6 @@ const CategoriesScreen = ({navigation}) => {
 
   return (
     <FlatList
-      contentContainerStyle={styles.screen}
       data={CATEGORIES}
       keyExtractor={item => item.id}
       renderItem={renderCategoryItem}
@@ -29,10 +28,6 @@ const CategoriesScreen = ({navigation}) => {
   );
 };
 
-const styles = StyleSheet.create({
-  screen: {
-    backgroundColor: '#24180f',
-  },
-});
+const styles = StyleSheet.create({});
 
 export default CategoriesScreen;
