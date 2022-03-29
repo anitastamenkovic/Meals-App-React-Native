@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     padding: 8,
   },
   detailItem: {
-    marginHorizontal: 8,
+    margin: 8,
     fontSize: 12,
   },
 });
