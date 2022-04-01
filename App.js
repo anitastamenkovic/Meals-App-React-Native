@@ -1,12 +1,14 @@
 import React from 'react';
 import type {Node} from 'react';
-import {StyleSheet} from 'react-native';
 import AppNavigation from './src/navigation/AppNavigation';
+import FavoritesContextProvider from './store/favorites-context';
 
 const App: () => Node = () => {
-  return <AppNavigation />;
+  return (
+    <FavoritesContextProvider>
+      <AppNavigation />
+    </FavoritesContextProvider>
+  );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;

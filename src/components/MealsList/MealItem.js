@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, Pressable, Image, Platform} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-import MealDetails from './MealDetails';
+import MealDetails from '../MealDetails';
 
 const MealItem = ({
   id,
